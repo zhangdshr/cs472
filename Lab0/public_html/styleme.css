@@ -48,3 +48,7 @@ img.size {
     width: 300px;
     height: 300px;
 }
+
+h_layout {
+    flex-direction: row;
+}
