@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2019, 3:35:34 PM
+    Author     : 987000
+*/
+
+.title_cool_under_line {
+    font-family: Lucida Sans Unicode, Helvetica, Arial, or any sans-serif;
+    text-decoration: underline;
+    color: rgb(164, 164, 0);
+    background-color: rgb(240, 240, 240);
+    font-size:  22pt;
+    align-self: center;
+}
+
+.title_small_cool_under_line {
+    font-family: Lucida Sans Unicode, Helvetica, Arial, or any sans-serif;
+    text-decoration: underline;
+    color: rgb(164, 164, 0);
+    background-color: rgb(240, 240, 240);
+    font-size:  18pt; 
+    align-self: center;
+}
+
+.text {
+    color: rgb(64, 64, 64);
+    font-size:  11pt;
+    font-family: Georgia, Garamond, serif;
+}
