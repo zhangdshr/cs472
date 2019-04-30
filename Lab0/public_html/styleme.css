@@ -38,3 +38,8 @@ ul.white {
 ol.white {
     color: white;
 }
+
+img.size {
+    width: 300px;
+    height: 300px;
+}
