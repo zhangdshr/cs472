@@ -27,6 +27,11 @@ h4.cool_under_line {
     color: white;
 }
 
+h4.white {
+    font-family: cursive;
+    color: white;
+}
+
 span.yellow {
     color: yellow;
 }
