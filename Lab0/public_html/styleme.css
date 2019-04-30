@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2019, 11:47:36 AM
+    Author     : 987000
+*/
+body.backgroud {
+    background-color: black;
+}
+
+h1.cool {
+    font-family: cursive;
+    color: deepskyblue;
+}
+
+h2.cool {
+    font-family: cursive;
+    color: deepskyblue;
+}
+
+h4.cool_under_line {
+    font-family: cursive;
+    text-decoration: underline;
+    color: white;
+}
+
+span.yellow {
+    color: yellow;
+}
+
+ul.white {
+    color: white;
+}
+
+ol.white {
+    color: white;
+}
