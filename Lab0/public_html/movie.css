@@ -11,3 +11,8 @@ and open the template in the editor.
 body.background {
     background-image: url(../homework2/background.png);
 }
+
+.top_bg {
+    width: 100%;
+    height: 50px;
+}
