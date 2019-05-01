@@ -14,7 +14,6 @@ and open the template in the editor.
     color: rgb(164, 164, 0);
     background-color: rgb(240, 240, 240);
     font-size:  22pt;
-    align-self: center;
 }
 
 .title_small_cool_under_line {
@@ -31,3 +30,26 @@ and open the template in the editor.
     font-size:  11pt;
     font-family: Georgia, Garamond, serif;
 }
+
+.text_bottom {
+    background-color: rgb(255, 255, 168);
+    width: 90%;
+    margin-left: 5%;
+    font-style: italic;
+}
+
+.backgroud_black {
+    background-color: black;
+}
+
+body.bg {
+    width: 70%; 
+    margin-left: 15%; 
+    background-color: white;
+}
+
+.text_link {
+    text-decoration: underline;
+    color: rgb(164, 164, 0);
+}
+
