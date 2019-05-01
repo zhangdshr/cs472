@@ -8,6 +8,6 @@ and open the template in the editor.
     Author     : 987000
 */
 
-bg {
+body.background {
     background-image: url(../homework2/background.png);
 }
