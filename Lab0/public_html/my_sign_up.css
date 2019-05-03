@@ -1,0 +1,16 @@
+#main-bg {
+    border-radius: 20px;
+    width: 450px;
+    height: auto;
+    border: 2px gray solid;
+    background-color: #E0E0FF;
+}
+
+#main-title-bg {
+    border: 2px gray solid;
+    background-color: white;
+}
+
+#sign-up-btn {
+    background-color: pink;
+}
