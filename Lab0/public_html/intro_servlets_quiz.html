@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to Servlets Quiz</title>
+</head>
+<body>
+
+    <p>1. What is the difference between a web server and a web container?</p>
+    <p>Web Container is used to manage the components like Servlets, JSP. It is a part of the web server.<br>
+    Web Server is a server which is capable of handling HTTP requests, sent by a client and respond back with a HTTP response.</p>
+    <p>2. What is a servlet?</p>
+    <p>A servlet is server-side java code that can handle http requests and return dynamic content</p>
+    <p>3. How do web servers and web containers interact with servlets?</p>
+    <p>When web server receives the request from browser, it sends control to web container. <br>
+        Then the container will execute servlet life cycle, servlet will handle http requests and return dynamic content. <br>
+        After response object is sent to web server by container, web server will send the response to client.</p>
+    <p>4. Who creates request objects?</p>
+    <p>The container</p>
+    <p>5. What are the states in the servlet lifecycle?</p>
+    <p>1.Instantiation 2. Initialization (init()) 3. Implementation (multiple calls of service()) 4. Destruction(destroy())</p>
+    <p>6. Who calls init and when? </p>
+    <p>The container. Once after instantiating the servlet, before container call service()</p>
+    <p>7. Which of init, service, and doGet should you override? </p>
+    <p>doGet</p>
+    <p>8. In what sense are servlets multi-threaded?  </p>
+    <p>Each request that comes in results in the spawning of a new thread that runs a servlet.</p>
+    <p>9. What are the implications of this for servlet instance variables? </p>
+    <p>Servlet use only 1 instance with multi-threaded. Each request runs in a separate thread and each thread has own stack for local variables. All threads share instance variables.<br>
+        Multi-threaded servlets can eliminate the cost of creating a new process every time. It will reduce the need for system resource. It will improve the system concurrency and response time.<br>
+        But sharing resource will also cause the insecure of thread. To avoid this insecure situation, we should avoid use servlet instance variables.</p>
+</body>
+</html>
