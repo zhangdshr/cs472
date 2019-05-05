@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>State Management Quiz</title>
+</head>
+<body>
+    <div><p><strong>1. Can post requests be bookmarked? What are the problems?</strong>  <br>
+        POST request shouldn't be bookmarked. Because a bookmark only consists of the URL, but all of the form parameters in post request are not in the URL, they will be lost. The web server won't know what to do with the request without expecting form parameters.</p>
+        <p><strong>2. What is the purpose of request dispatching?</strong><br>
+            The purpose of request dispatching is to forward a client's request to a resource or include the resource itself in the response back to the client. A resource can be another servlet, or an HTML file, or a JSP file, etc.</p>
+        <p><strong>3. What is the difference between redirect and request dispatch?</strong><br>
+            Redirect: It will jump to a new url. It goes to a different server file. It only sends message, won't send request and response objects. It will create new request and response objects.<br>
+            Request dispatch: It will jump to a new servlet. It goes to the same server file. It will send request and response objects to destination servlet.Browser is completely unaware of servlet forward and hence the URL
+            in browser address bar will remain unchanged.
+        </p>
+        <p><strong>4. What is an attribute?</strong><br>
+            It is an object bound into one of the three servlet API objects on the web server: HttpServletRequest, HttpSession, and ServletContext. It has a name-value pair( name is String, value has type Object). They promote
+            communication between components.</p>
+        <p><strong>5. What is the difference between attributes and parameters?</strong><br>
+            1: Parameters are read only, attributes are read/write objects. <br>
+            2: Parameters are String objects, attributes can be objects of any type.
+        </p>
+        <p><strong>6. What are dangers of using attributes?</strong><br>
+            Only request scope attribute is thread-safe. Session scope attribute and Context scope attribute is not thread-safe.</p>
+        <p><strong>7. What does it mean to say that http is stateless? Give an example of a stateful protocol.</strong><br>
+            1. After a web responds to a request, there is no “memory” of the request or who sent it.
+            2. Example of a stateful protocol: FTP.
+        </p>
+        <p><strong>8. Give 5 different methods for maintaining state information (count each attribute scope as one
+            method).</strong><br>
+            request.setAttribute("xx","xx")<br><br>request.getSession().setAttribute("xx","xx")<br><br>this.getServletContext().setAttribute("xx","xx")<br><br>Cookie c = new Cookie("xx","xx");<br>
+            c.setMaxAge(xxx);<br>
+            response.addCookie(c);<br><br>&lt;input type="hidden" name="xx" value="xx"&gt;</p>
+        <p><strong>9. How long does a session last?</strong><br>
+            After a session is created, the container can’t tell when browser is finished with session. So we remove session by 3 ways: use session-timeout by days, use session.setMaxInactiveInterval(20*60) by seconds, or use session.invalidate() to remove it immediately.</p>
+        <p><strong>10. What is a cookie, and how long does a cookie last?</strong><br>
+            1. A cookie is a text file stored on the client computer that is persisted between the multiple client requests. Session tracking via cookie exchange<br>
+            2. Temporary cookie: browser removes when it closes. Permanent cookie: has a max age set.</p>
+        <p><strong>11. What is the purpose of URL rewriting?</strong><br>
+            To alter the parameters in the URL.</p>
+        <p><strong>12. Why does the request attribute report ‘null’ for the maintaining state demo?</strong><br>
+            <q>Request scope: destroyed when servlet finishes processing request</q> This means request scope attribute will only be valid in one request method. doGet and doPost are 2 requests. So the attribute is setted in doGet wil be invalid in doPost.</p>
+    </div>
+</body>
+</html>
