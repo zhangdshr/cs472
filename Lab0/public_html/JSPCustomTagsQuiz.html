@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP Custom Tags Quiz</title>
+</head>
+<body>
+
+<strong>1.Rewrite the JSP page in the first demo (forEach) to use scripting instead of the JSTL forEach.</strong><br>
+<%@ page import = java.util.*" %>
+
+<%
+List students = (List<Student>)request.getAttribute("students");
+    for(Student s : students){
+    out.print(""+s.getName()+"");
+    out.print("" + s.getAge()+"");
+    }
+    %><br>
+
+    <strong>2.How do custom tags relate to JSTL?</strong><br>
+    JSTL is a standard library of JSP actions, it includes custom tags. JSP allows developers to create their own actions by custom tags. Component development creates custom functionality that can be packaged and reused by content developers. Customer can extend SimpleTagSupport class and rewrite doTag() method to make a simplest custom tag.
+    Key steps :
+    Define a tag including attributes and body . Write a Tag Library Descriptor (TLD) that the container will read. Write a tag handler class that implements the tag functionality . Use the tag on a JSP page and link it to the tag descriptor
+    <br>
+    <strong>3.What is the role of the URI in the TLD and the taglib directive?</strong><br>
+    The uri attribute value resolves to a location the container understands. The taglib directive declares that your JSP page uses a set of custom tags, identifies the location of the library, and provides a means for identifying the custom tags in your JSP page.
+    <br>
+    <strong>4.What is a tag handler class?</strong><br>
+    It is a type of component of tag library. It is a class extends the tag support framework class – javax.servlet.jsp.tagext.TagSupport. To use custom JSP tags, we need to define the tag handler class that defines the tag's behavior.
+    <br>
+    <strong>5.What is the role of attribute setters in a tag handler class?</strong><br>
+    To store the attribute value in a member variable that is accessible to the other methods of the tag handler.
+    <br>
+    <strong>6. What is the role of the doTag() method in a tag handler class?</strong><br>
+    DoTag() method is called once and only once for any given tag invocation by the container. All tag logic, iteration and body evaluations occur in this method.
+    <br>
+    <strong>7. What does the operation getJspContext().getOut().write(“Hi Bob”) do when called in a doTag() method?</strong><br>
+    DoTag() method takes the current JspContext object using the getJspContext() method and uses it to send "Hi Bob!" to the current JspWriter object
+    <br>
+    <strong>8.What does the operation getJspBody().invoke(null) do when called in a doTag() method?</strong><br>
+    When getJspBody().invoke(null) is called, it is the output resulting from the execution of the tag body's JSP content that gets passed to the client, not the JSP code itself.
+
+
+</body>
+</html>
