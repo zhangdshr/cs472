@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="quizStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div><p><strong>1. What is the difference between the following 2 statements?<br>
+    setTimeout(booyah, 2000);
+    setTimeout(booyah(), 2000);</strong> <br>
+    setTimeout(booyah(), 2000) calls the function immediately, setTimeout(booyah, 2000) wait the 2000ms.
+</p>
+    <p><strong>2. What do the following 2 alerts display (answer without running the code)?<br>
+        var myfunc = function(a, x) {
+        return a * x;
+        };
+        var x = myfunc(2, 3);
+        var y = myfunc;
+        alert(x);
+        alert(y(2,3)); </strong> <br>It will display 2 alert popup boxes, each with number 6.
+    </p>
+    <p><strong>3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds
+        that
+        says “BOOYAH!”<br>
+        setTimeout(booyah1, 2000);
+        setTimeout(booyah2(), 2000);
+    </strong> <br>
+        function booyah1() {
+        alert("BOOYAH!");}<br><br>
+        function booyah2() {
+        setTimeout(alert("BOOYAH!"),2000);}
+    </p>
+    <p><strong>4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the
+        reasons
+        for using it)?</strong> <br>
+        It means the separation of content (HTML) presentation(CSS) and behavior (Javascript).<br>
+        In the lecture slide code, we attach event handlers to elements' DOM objects in the JavaScript code, instead of
+        HTML is cluttered with JS code.<br>
+        Usability: An unobtrusive DOM script does not draw the attention of the user - visitors use it without thinking
+        about it.
+        Graceful degradation: Unobtrusive DOM scripts never generate error messages, in any browser, even when they
+        fail. If features cannot be presented properly, they silently disappear.
+        Accessibility: If any script fails, the page still delivers its core functions and information via the markup,
+        stylesheets and/or server-side scripting.
+        Separation: For the benefit of other and future web developers, all JavaScript code is maintained separately,
+        without impacting other files of script, markup or code.
+        <br>
+    </p>
+</div>
+
+
+</body>
+</html>
