@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope Exercises</title>
+</head>
+<body>
+<p><strong>1. Determine what this Javascript code will print out (without running it):
+    x = 1;
+    var a = 5;
+    var b = 10;
+    var c = function(a, b, c) {
+    var x = 10;
+    document.write(x);
+    document.write(a);
+    var f = function(a, b, c) {
+    b = a;
+    document.write(b);
+    b = c;
+    var x = 5;
+    }
+    f(a,b,c);
+    document.write(b);
+    }
+    c(8,9,10);
+    document.write(b);
+    document.write(x);
+    }</strong><br>10,8,8,9,10,1</p>
+<p><strong>2. What is the difference between a method and function?</strong><br>A function is defined outside of an
+    object.
+    A method is defined as the property of an object.In addition, methods are implicitly given a reference to the parent
+    object (this) and are able to operate on other data that is stored within the object.</p>
+<p><strong>3. What does 'this' refer to when used in a Java method?</strong><br>The current class.</p>
+<p><strong>4. What does 'this' refer to when used in a JavaScript method?</strong><br>The current object.</p>
+<p><strong>5. What does 'this' refer to when used in a JavaScript constructor function?</strong><br>The newly created
+    object.</p>
+<p><strong>6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword
+    'this'.
+    When f is called by x.f( ), what does 'this' refer to?
+</strong><br>x</p>
+<p><strong>7. What is a free variable in JavaScript?</strong><br>A variable referred to by a function that is
+    not one of its parameters or local variables.</p>
+<p><strong>8. Create an object that has properties with name = "fred" and major="music" and a property that is a
+    function
+    that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.</strong><br>
+    <img src="../images/codepic.jpg" alt="">
+</p>
+<p><strong>9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor
+    function.
+    Employee objects have the following fields: name, salary, position.</strong><br>
+    <img src="../images/codejs2.jpg" alt="">
+</p>
+<p><strong>10. Write a Javascript function that takes any number of input arguments and returns the product of the
+    arguments.</strong><br>
+    <img src="../images/codejs3.jpg" alt="">
+</p>
+<p><strong>11. Write an arrow function that returns the maximum of its three input arguments.</strong><br>
+    <img src="../images/jscode4.jpg" alt="">
+</p>
+
+
+</body>
+</html>
