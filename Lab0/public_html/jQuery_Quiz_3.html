@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><p><strong>1. Find the text in the first paragraph (stripping out the html), then set the html of the last
+    paragraph to
+    show it is just text (the red bold is gone).</strong><br>
+    //a code to find the first paragraph in html and set that paragraph to the second paragraph<br>
+    $f=$('p:first').text();<br>
+    $('body').children().eq(1).html($f);</p>
+    <p><strong>2. Write jQuery code to create a red background for the level-2 list items.</strong>
+        <br>// a code to change level two background color to red<br>
+        $l2=$('.level-2').children().slice(0,2);<br>
+        $l2.css('background-color','red');<br>
+    </p>
+    <p><strong>3. Write jQuery code to select the element that comes immediately before item three and change its
+        background color to blue.</strong><br>
+        // a code to select the element before the third element<br>
+        $('ul .third-item').prev().css('background-color','blue');<br></p>
+    <p><strong>4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu
+        described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by
+        "Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies
+        these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new
+        requirement.</strong><br>
+        Match li element in the Turkey class and replace them Mashed Potatoes<br>
+        $(’.Turkey’).replaceWith(“li class=”potatoes”> em Mashed Potatoes em<>”);<br></p>
+    <p><strong>5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the
+        span
+        of text ("some text") in the following to green.</strong><br>
+        $('span').parent().parent().css('background-color','green');</p>
+</div>
+
+
+</body>
+</html>

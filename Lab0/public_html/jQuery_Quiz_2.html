@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><p><strong>1. Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if
+    they are. Explain why they can have different parameters and be equivalent, if they are equivalent. </strong><br>
+    All of this fragment codes are equivalent, depending our needs we can use them, since the each
+    method accepts two parameter, we can use the method either by passing all the two parameter or
+    without passing any parameter by using this keyword to refer the element which we want to iterate.<br>
+
+    //code fragment 1<br>
+    $("li").each(function(idx, e) {<br>
+    $(e).css(“color”, “yellow”); });<br>
+    The second fragment shows that it’s not accepting any parameter, but it’s using this
+    keyword to change the color of the element.<br>
+
+    //code fragment 2<br>
+    $("li").each(function() {<br>
+    $(this).css(“color”, “yellow”); });<br>
+    The third fragment shows that, it is accepting the index parameter but it’s not applicable at
+    this point.<br>
+    //code fragment 3<br>
+    $("li").each(function(idx) {<br>
+    $(this).css(“color”, “yellow”); });<br>
+</p>
+    <p><strong>2. Write a jQuery expression to find all divs on a page that include an unordered list in them, and make
+        their text color be blue.</strong>
+        <br>//This will find all the divs inside a page<br>
+        $('body div').css('color', 'blue');
+    </p>
+    <p><strong>3. Write jQuery code to append the following div element (and all of its contents) dynamically to the
+        body
+        element.</strong><br>
+        $('body').append( div h1 JQuery Core h1 div);</p>
+</div>
+
+
+</body>
+</html>
